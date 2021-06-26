@@ -1,0 +1,86 @@
+///1. Ecrire un programme qui permet de simuler un « lancer de dé »
+>>> from random import random
+>>> def experience() :
+ D1 = int(random.randint(1, 7)
+ 
+ S = D1 
+ print(S)
+
+
+
+
+///2. Simuler le lancer de dé « n » fois. La valeur de « n » devra être demandée à l’utilisateur. 
+>>> def repetition(N):
+ k=0
+ while k<N:
+expérience()
+k=k+1
+
+
+///3. On veut maintenant chercher le nombre d’apparitions de la face 6. Ecrire une fonction qui
+permet d’afficher ce résultat pour un nombre de lancers donné.
+>>> def nombredesix(N):
+ k=0
+ n=0
+ while k<N:
+S = experience()
+ If S==6:
+ n = n+1
+k=k+1
+ printf(6)
+
+
+////4. Soit une expérience aléatoire consistant à lancer un dé jusqu'à ce que l'on obtienne un « 6 ».
+Calculez et affichez le nombre de lancers avant d'obtenir le premier ‘6’
+>>> def nombredesix(N):
+ k=0
+ n=0
+ while k<N:
+S = experience()
+ If S==6:
+ n = n+1
+k=k+1
+ 
+ return(k)
+
+
+///5.Simuler le tirage d’une pièce de monnaie « n » fois. Le nombre « n » est entré par l’utilisateur. 
+>>>import random
+aleatoir=random.randint(0,1)
+if aleatoir==0:
+print(str(aleatoir)+":pile")
+else (print(str(aleatoir)+":face")
+
+
+
+EXO2:
+1)
+def eststochastique(P):
+    nl = len(P)  # nombre de lignes
+    
+ 
+    etat = True  # on suppose que la matrice est stochastique
+    for i in range(nl):
+        s = 0
+            s += P[i]
+        if s > 1:
+            etat = False
+            break
+    return etat
+
+
+
+#Matrice stochastique:::
+def eststochastique(P):
+    nl = len(P)  # nombre de lignes
+    nc = len(P[0])  # nombre de colonnes
+ 
+    etat = True  # on suppose que la matrice est stochastique
+    for i in range(nl):
+        s = 0
+        for j in range(nc):
+            s += P[i][j]
+        if s > 1:
+            etat = False
+            break
+    return etat
